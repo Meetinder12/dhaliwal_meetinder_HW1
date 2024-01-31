@@ -1,0 +1,17 @@
+#beermug{
+    height: 550px;
+    width: 550px;
+}
+#greytext {
+    transition: all 0.5s ease;
+    transform-origin: center;
+}
+
+#Layer_1:hover #bgcircle {
+    fill: orange;
+}
+
+#Layer_1:hover #greytext {
+    fill: white;
+    transform: rotate(130deg);
+}
