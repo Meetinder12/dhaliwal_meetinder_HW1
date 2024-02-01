@@ -14,7 +14,7 @@
          transition: all 0.5s ease;
           transform-origin: center;
       }
-      #nine:hover{
+      #cloud-nine:hover #nine{
         transform:rotate(180deg);
       }
       .cls-2:hover{
