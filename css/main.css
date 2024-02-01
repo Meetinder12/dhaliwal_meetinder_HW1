@@ -1,0 +1,15 @@
+.hidden{
+    display: none;
+}
+header{
+    background-color: rgb(238, 192, 76);
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+#svgs div{
+    display:inline-block;
+    padding: 50px;
+    margin: 30px;
+    border: 20px;
+}
