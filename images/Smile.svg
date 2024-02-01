@@ -1,24 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.13 240.13">
+<svg id="Smile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.13 240.13">
   <defs>
     <style>
       .cls-1 {
         fill: #231f20;
       }
 
-      .cls-1, .cls-2 {
+      .cls-1{
         stroke: #231f20;
         stroke-miterlimit: 10;
       }
-
-      .cls-2 {
-        fill: #fff200;
+      #facesmile{
+        fill:red
       }
+      #facesmile{
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+      #background {
+    fill: #fff200;
+  }
+  #Smile:hover #facesmile{
+    fill:black
+  }
+
+  #Smile:hover .cls-1 {
+      fill: #fff200;        
+      
+  }
+  
+
+      
     </style>
+    <script>
+      const vectorGraphic = document.querySelector('#Smile');
+
+      function logThisId() {
+          console.log(this);
+          console.log(' Please Smile', this.id);
+      }
+
+      vectorGraphic.addEventListener('click', logThisId);
+    </script>
   </defs>
   <circle class="cls-1" cx="120.07" cy="120.07" r="119.57"/>
-  <circle class="cls-2" cx="120.07" cy="120.07" r="111.56"/>
+  <circle id="background" cx="120.07" cy="120.07" r="111.56"/>
   <circle class="cls-1" cx="69.56" cy="81.44" r="19.18"/>
   <circle class="cls-1" cx="168.69" cy="81.44" r="19.18"/>
-  <path class="cls-1" d="m64.41,147.42h111.3c.53,1.95-55.65,59.13-111.3,0Z"/>
+  <path id="facesmile" d="m64.41,147.42h111.3c.53,1.95-55.65,59.13-111.3,0Z"/>
 </svg>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 256.2">
+<svg id="shazam" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 256.2">
   <defs>
     <style>
       .cls-1 {
@@ -7,21 +7,41 @@
         font-size: 32px;
       }
 
-      .cls-1, .cls-2 {
+      .cls-1, #bolt {
         fill: #fff200;
       }
-
-      .cls-2, .cls-3 {
+  
+      #bolt:hover{
+        fill:blue
+      }
+      #bolt, .cls-3 {
         stroke-width: 0px;
       }
 
-      .cls-3 {
+      #back-ground {
         fill: #231f20;
       }
+      #back-ground:hover{
+        fill:red
+      }
+      text:hover{
+        fill:blue
+      }
     </style>
+     <script>
+      const vectorGraphic = document.querySelector('#shazam');
+
+      function logThisId() {
+          console.log(this);
+          console.log(' Surprise !!!', this.id);
+      }
+
+      vectorGraphic.addEventListener('click', logThisId);
+    </script>
   </defs>
-  <circle class="cls-3" cx="122" cy="134.2" r="122"/>
-  <polygon class="cls-2" points="141.11 80.96 92.35 133.3 127.47 141.25 88.8 187.43 141.25 145.58 155.2 132.9 125.35 126.14 141.11 80.96"/>
+  <circle id="back-ground" cx="122" cy="134.2" r="122"/>
+  <polygon id="bolt" points="141.11 80.96 92.35 133.3 127.47 141.25 88.8 187.43 141.25 145.58 155.2 132.9 125.35 126.14 141.11 80.96"/>
+  
   <text class="cls-1" transform="translate(68.83 56.92) rotate(-31.82)"><tspan x="0" y="0">S</tspan></text>
   <text class="cls-1" transform="translate(76.03 52.39) rotate(-26.25)"><tspan x="0" y="0">H</tspan></text>
   <text class="cls-1" transform="translate(84.73 48.1) rotate(-20.73)"><tspan x="0" y="0">A</tspan></text>
